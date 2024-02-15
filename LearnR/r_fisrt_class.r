@@ -19,8 +19,18 @@ z <- 16
 # PRINT x + y * z
 print(paste("El total es: ", x + y * z))
 
+# CREATE VECTOR OR LIST OF STUDENTS
 students_names <- c("Shinji", "Asuka", "Rei", "Eren")
 students_age <- c(15, 14, 16, 18)
 
+# CREATE TABLE WITH LOCAL VARAIBLES
 students_table <- data.frame(students_names, students_age)
+
+#SHOW student_table AS TABLE
 View(students_table)
+
+# READ EXCEL FILES
+data_excel <- read_excel("LearnR/files/names_and_ages.xlsx")
+View(data_excel)
+
+
